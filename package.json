@@ -1,0 +1,25 @@
+{
+  "name": "node-news-client",
+  "version": "0.0.1",
+  "description": "newsletter client application in nodejs",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ykamat/node-news-client.git"
+  },
+  "keywords": [
+    "newsletter",
+    "nodejs",
+    "angularjs",
+    "mailer"
+  ],
+  "author": "Yogesh Kamat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ykamat/node-news-client/issues"
+  },
+  "homepage": "https://github.com/ykamat/node-news-client"
+}
