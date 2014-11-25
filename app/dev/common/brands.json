@@ -1,0 +1,9 @@
+{
+  "brandName": "Tata",
+  "lists": {"name": "innova",
+    "subscribers":[
+      {"email":"xxx@gmail.com"},
+      {"email": "yyy@gmail.com"}
+    ]
+  }
+}
