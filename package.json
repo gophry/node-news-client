@@ -24,6 +24,7 @@
   "homepage": "https://github.com/ykamat/node-news-client",
   "devDependencies": {
     "gulp": "^3.8.10",
-    "gulp-util": "^3.0.1"
+    "gulp-util": "^3.0.1",
+    "gulp-webserver": "^0.8.7"
   }
 }
