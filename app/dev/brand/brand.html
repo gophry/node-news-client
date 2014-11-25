@@ -1,0 +1,81 @@
+<div class="span5">
+  <h2>New brand</h2><br>
+
+  <label class="control-label" for="app_name">Brand name</label>
+  <div class="control-group">
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="app_name" name="app_name" placeholder="The name of the brand you're sending from">
+    </div>
+  </div>
+
+  <label class="control-label" for="from_name">From name</label>
+  <div class="control-group">
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="from_name" name="from_name" placeholder="From name">
+    </div>
+  </div>
+
+  <label class="control-label" for="from_email">From email</label>
+  <div class="control-group">
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="from_email" name="from_email" placeholder="From email">
+    </div>
+    <p id="verification-check-loader" style="display:none;"><img src="http://sendy.co/demo/img/loader.gif" style="width:16px;"> Checking if your 'From email' is verified in your SES console..<br><br></p>
+    <div class="alert" id="unverified-email" style="display:none;"><strong><i class="icon icon-warning-sign"></i> Unverified 'From email'</strong>: See Step 6 of our Get Started Guide on how to verify <a href="http://sendy.co/get-started" target="_blank" data-original-title="" title="">http://sendy.co/get-started</a></div>
+    <div class="alert alert-success" id="verified-email" style="display:none;"><strong><i class="icon icon-ok"></i> Congrats! This 'From email' is verified.</strong></div>
+  </div>
+
+  <label class="control-label" for="reply_to">Reply to email</label>
+  <div class="control-group">
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="reply_to" name="reply_to" placeholder="Reply to email">
+    </div>
+  </div>
+
+  <input type="hidden" name="uid" value="1">
+
+  <h3>SMTP settings (only if you're not using Amazon SES)</h3><br>
+
+  <div class="well">
+    If you prefer using other email service providers over Amazon SES for sending emails, set your SMTP settings here. Note that multi-threading is not supported, bounces and complaints will also not be registered if you use other email service providers to send emails.        </div>
+
+    <label class="control-label" for="smtp_host">Host</label>
+    <div class="control-group">
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="smtp_host" name="smtp_host" placeholder="eg. smtp.gmail.com">
+      </div>
+    </div>
+
+    <label class="control-label" for="smtp_port">Port</label>
+    <div class="control-group">
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="smtp_port" name="smtp_port" placeholder="eg. 465">
+      </div>
+    </div>
+
+    <label class="control-label" for="smtp_ssl">SSL / TLS</label>
+    <div class="control-group">
+      <div class="controls">
+        <select name="smtp_ssl">
+          <option value="ssl" id="ssl">SSL</option>
+          <option value="tls" id="tls">TLS</option>
+        </select>
+      </div>
+    </div>
+
+    <label class="control-label" for="smtp_username">Username</label>
+    <div class="control-group">
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="smtp_username" name="smtp_username" placeholder="Username (usually your email)" autocomplete="off">
+      </div>
+    </div>
+
+    <label class="control-label" for="smtp_password">Password</label>
+    <div class="control-group">
+      <div class="controls">
+        <input type="password" class="input-xlarge" id="smtp_password" name="smtp_password" placeholder="Your password" autocomplete="off">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-inverse"><i class="icon-ok icon-white"></i> Save</button>
+  </div>

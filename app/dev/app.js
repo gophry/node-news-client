@@ -17,8 +17,4 @@
   }]);
 
   //
-  app.controller('BrandController', function(){
-
-  });
-
 })();
