@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-App="newsclient">
+<html lang="en" ng-app="news">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,14 +17,15 @@
   <![endif]-->
 </head>
 <body>
-  <h1>Hello, world!</h1>
-
+    <div ng-controller="BrandController as brandCtrl">
+      <h1>Hello, {{brandCtrl.brand.name}}!</h1>
+    </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/angular/angular.min.js"></script>
   <script src="assets/js/angular/angular-route.min.js"></script>
   <script src="assets/js/angular/angular-animate.min.js"></script>
-
+  <script src="app.js"></script>
 </body>
 </html>
