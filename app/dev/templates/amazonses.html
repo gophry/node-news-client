@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <a href="#" class="list-group-item active">
+        Amazon SES Account
+    </a>
+    <li ng-repeat="(key,value) in brandCtrl.ses" class="list-group-item">
+        <span class="badge">{{value}}</span>
+        {{key.charAt(0).toUpperCase() + key.substring(1)}}
+    </li>
+</ul>

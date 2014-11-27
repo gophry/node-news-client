@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap 101 Template</title>
+  <title>Angular</title>
 
   <!-- Bootstrap -->
   <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/dashboard.css" rel="stylesheet">
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,10 +19,11 @@
   <![endif]-->
 </head>
 <body>
-<div class="container-fluid">
-  <header ng-include="'common/header.html'"></header>
-  <div class="" ui-view="brand">
-    
+
+<div class="container-fluid" ng-controller="NavController as navCtrl" >
+  <news-header></news-header>
+
+  <news-skeleton></news-skeleton>
   </div>
 </div>
 
@@ -28,8 +31,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/angular/angular.min.js"></script>
-  <script src="assets/js/angular/angular-route.min.js"></script>
-  <!--<script src="assets/js/angular/angular-animate.min.js"></script>-->
   <script src="assets/js/angular/angular-ui-router.min.js"></script>
   <script src="brand/brand.js"></script>
   <script src="app.js"></script>
