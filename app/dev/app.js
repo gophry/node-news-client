@@ -1,9 +1,6 @@
 (function(){
 
-  // @companyName,@loggeduser === fetched from global json object name.
-  var loggedUser,companyName;
-
-  var app = angular.module('news', []);
+  var app = angular.module('news', ['ui.router','brand']);
 
   //define a controller for navigation contents.
   app.controller('NavController',['$http', function($http){
@@ -15,6 +12,15 @@
     });
 
   }]);
+
+  //understand and test ui-router config.
+  app.config(function($stateProvider,$urlRouterProvider){
+    $stateProvider.state('news',{
+      url:'',
+      abstract:true
+    });
+    $urlRouterProvider.otherwise('/');
+  });
 
   //
 })();

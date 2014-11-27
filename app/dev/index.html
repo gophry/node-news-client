@@ -19,8 +19,8 @@
 <body>
 <div class="container-fluid">
   <header ng-include="'common/header.html'"></header>
-  <div class="">
-
+  <div class="" ui-view="brand">
+    
   </div>
 </div>
 
@@ -29,7 +29,10 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/angular/angular.min.js"></script>
   <script src="assets/js/angular/angular-route.min.js"></script>
-  <script src="assets/js/angular/angular-animate.min.js"></script>
+  <!--<script src="assets/js/angular/angular-animate.min.js"></script>-->
+  <script src="assets/js/angular/angular-ui-router.min.js"></script>
+  <script src="brand/brand.js"></script>
   <script src="app.js"></script>
+
 </body>
 </html>

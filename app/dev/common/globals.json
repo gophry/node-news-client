@@ -2,8 +2,9 @@
   "companyname": "HoneyWell",
   "loggeduser":"Yogesh",
   "nav" : [
-     "Campaign",
-     "Lists",
-     "Reports"
+    "Brands",  
+    "Campaign",
+    "Lists",
+    "Reports"
   ]
 }
