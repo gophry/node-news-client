@@ -1,6 +1,6 @@
 (function(){
 
-  var brand = angular.module('brand',[]);
+  var brand = angular.module('brand',['brand.create']);
 
   //directive for amazon ses status details
   brand.directive('amazonStatus',function(){
@@ -20,19 +20,6 @@
       //console.dir(data);
     });
   }]);
-
-  brand.config(function($stateProvider){
-    $stateProvider.state('brand',{
-      url:'/',
-      views: {
-        'brand@':{
-          controller:'BrandController as brandCtrl',
-          templateUrl:'brand/brand.html'
-        },
-      controllerAs: 'brandCtrl'
-      }
-    });
-  });
 
 
 })();
