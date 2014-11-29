@@ -15,7 +15,6 @@
 
     $http.get('common/globals.json').success(function(data){
       globals.navigation = data;//assign fetched data
-      console.dir(data);
     });
   }]);
 
@@ -31,8 +30,8 @@
     //'oute state for the brand module
     $stateProvider.state('brand',{
       url:'/brand',
-      templateUrl:'brand/brand.html',
-      controller:''
+      templateUrl:'brand/brand.html'
+      //controller:'BrandReadController as brandReadCtrl'
     });
 
     //$urlRouterProvider.otherwise('/');

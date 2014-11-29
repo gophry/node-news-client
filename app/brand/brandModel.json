@@ -1,0 +1,45 @@
+[
+  {
+    "login": {
+      "loginurl":"http://localhost:8000/",
+      "loginmail":"xyz@gmail.com",
+      "loginpassword":"abcd"
+    },
+    "mail":{
+      "brandname":"Haier",
+      "fromname":"Yogesh Kamat",
+      "fromemail":"xyz@gmail.com",
+      "replytoemail":"xyz@gmail.com"
+    },
+    "smtp":{
+
+    },
+    "campaign":{
+      "currency":"",
+      "deliveryfee":"",
+      "cost":""
+    }
+  },
+  {
+    "login": {
+      "loginurl":"http://localhost:8000/",
+      "loginmail":"abc@email.com",
+      "loginpassword":"abcd"
+    },
+    "mail":{
+      "brandname":"Haier",
+      "fromname":"Yogesh Kamat",
+      "fromemail":"abc@email.com",
+      "replytoemail":"abc@email.com"
+    },
+    "smtp":{
+
+    },
+    "campaign":{
+      "currency":"",
+      "deliveryfee":"",
+      "cost":""
+    }
+  }
+]
+
