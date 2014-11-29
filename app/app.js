@@ -1,6 +1,6 @@
 (function(){
   //app is the global variable for the entire application.
-  var app = angular.module('news', ['ui.router']);
+  var app = angular.module('news', ['ui.router','brand']);
 
   //application level controller for initializing the application.
   app.controller('AppController',['$state','$log', function($state,$log){
@@ -29,9 +29,9 @@
     });
     //'oute state for the brand module
     $stateProvider.state('brand',{
-      url:'/brand',
-      templateUrl:'brand/brand.html'
-      //controller:'BrandReadController as brandReadCtrl'
+      url:'/brand/',
+      templateUrl:'brand/brand.read.html',
+      controller:'BrandReadController as brandReadCtrl'
     });
 
     //$urlRouterProvider.otherwise('/');

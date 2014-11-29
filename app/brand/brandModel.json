@@ -1,45 +1,53 @@
 [
-  {
-    "login": {
-      "loginurl":"http://localhost:8000/",
-      "loginmail":"xyz@gmail.com",
-      "loginpassword":"abcd"
-    },
-    "mail":{
-      "brandname":"Haier",
-      "fromname":"Yogesh Kamat",
-      "fromemail":"xyz@gmail.com",
-      "replytoemail":"xyz@gmail.com"
-    },
-    "smtp":{
+    {
+      "id":1,
+      "login": {
+        "loginurl":"http://localhost:8000/",
+        "loginmail":"xyz@gmail.com",
+        "loginpassword":"abcd"
+      },
+      "mail":{
+        "brandname":"Samsung",
+        "fromname":"Yogesh Kamat",
+        "fromemail":"xyz@gmail.com",
+        "replytoemail":"xyz@gmail.com"
+      },
+      "smtp":{
 
+      },
+      "campaign":{
+        "currency":"",
+        "deliveryfee":"",
+        "cost":""
+      },
+      "monthlylimit":10000,
+      "limitused":5000
     },
-    "campaign":{
-      "currency":"",
-      "deliveryfee":"",
-      "cost":""
-    }
-  },
-  {
-    "login": {
-      "loginurl":"http://localhost:8000/",
-      "loginmail":"abc@email.com",
-      "loginpassword":"abcd"
-    },
-    "mail":{
-      "brandname":"Haier",
-      "fromname":"Yogesh Kamat",
-      "fromemail":"abc@email.com",
-      "replytoemail":"abc@email.com"
-    },
-    "smtp":{
+    {
+      "id":"2",
+      "login": {
+        "loginurl":"http://localhost:8000/",
+        "loginmail":"abc@email.com",
+        "loginpassword":"abcd"
+      },
+      "mail":{
+        "brandname":"Haier",
+        "fromname":"Yogesh Kamat",
+        "fromemail":"abc@email.com",
+        "replytoemail":"abc@email.com"
+      },
+      "smtp":{
 
-    },
-    "campaign":{
-      "currency":"",
-      "deliveryfee":"",
-      "cost":""
+      },
+      "campaign": {
+        "currency": "",
+        "deliveryfee": "",
+        "cost": ""
+      },
+      "monthlylimit":20000,
+      "limitused":5000
     }
-  }
 ]
+
+
 
