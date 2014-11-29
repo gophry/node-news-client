@@ -3,26 +3,25 @@ gutil = require('gulp-util'),
 webserver = require('gulp-webserver');
 
 gulp.task('js', function() {
-  gulp.src('app/dev/js/**/*')
+  gulp.src('app/*.js')
 });
 
 gulp.task('html', function() {
-  gulp.src('app/dev/*.html')
+  gulp.src('app/*.html')
 });
 
 gulp.task('css', function() {
-  gulp.src('app/dev/css/*.css')
+  gulp.src('app/*.css')
 });
 
 gulp.task('watch', function() {
-  gulp.watch('app/dev/js/**/*', ['js']);
-  gulp.watch('app/dev/css/*.css', ['css']);
-  gulp.watch(['app/dev/*.html',
-  'app/dev/views/*.html'], ['html']);
+  gulp.watch('app/*.js', ['js']);
+  gulp.watch('app/*.css', ['css']);
+  gulp.watch(['app/*.html'], ['html']);
 });
 
 gulp.task('webserver', function() {
-  gulp.src('app/dev/')
+  gulp.src('app/')
   .pipe(webserver({
     livereload: true,
     open: true
