@@ -1,6 +1,6 @@
-<div  ng-controller="BrandReadController as brandReadCtrl">
+<div  ng-controller="BrandListController as brandListCtrl">
 <div class="col-md-8">
-    <h1 class="section-header">Brands</h1>
+    <h1 class="section-header">List of Brands</h1>
     <p><button class="btn" onclick="window.location='http://sendy.co/demo/new-brand'"><i class="icon-plus-sign"></i> Add a new brand</button></p><br>
 
     <table class="table table-striped responsive">
@@ -15,7 +15,7 @@
       </thead>
       <tbody>
 
-        <tr ng-repeat="brand in brandReadCtrl.brands" id="1">
+        <tr ng-repeat="brand in brandListCtrl.brands" id="1">
           <td><i class="glyphicon-calendar"></i> {{brand.mail.brandname}}</td>
           <td><span style="font-size: 16px;color:#969696;">{{brand.monthlylimit}}</span></td>
           <td><span style="font-size: 16px;color:#969696;">{{brand.limitused}}</span></td>
@@ -31,7 +31,7 @@
   <a href="#" class="list-group-item active">
     Amazon SES Account
   </a>
-  <li ng-repeat="(key,value) in brandReadCtrl.ses" class="list-group-item">
+  <li ng-repeat="(key,value) in brandListCtrl.ses" class="list-group-item">
     <span class="badge">{{value}}</span>
     {{key.charAt(0).toUpperCase() + key.substring(1)}}
   </li>

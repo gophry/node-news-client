@@ -1,17 +1,48 @@
 /*
  * Base structure
  */
-
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en");
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f3f3f4;
+    font-size: 13px;
+    color: #676a6c;
+    overflow-x: hidden;
 }
-
-
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.navbar-inverse {
+    background-color: #205081;
+    border-color: #080808;
+}
+.navbar-inverse .navbar-brand {
+    color: #f5f5f5;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
 /*
  * Global add-ons
  */
-
+.bg-white {
+    background-color: #ffffff;
+}
+.page-heading {
+    border-top: 4px solid #e7eaec;
+    padding: 0px 10px 20px 10px;
+}
+.wrapper {
+    padding: 0 20px;
+}
+.border-bottom {
+    border-bottom: 5px solid #e7eaec !important;
+}
 .sub-header {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
@@ -103,3 +134,56 @@ body {
     display: inline-block;
     border-radius: 50%;
 }
+.vdivide {
+border-right: 1px solid #e7eaec;
+}
+.hdivide {
+    border-bottom: 1px solid #e7eaec;
+    margin-bottom: 8px;
+}
+.formbox {
+    clear: both;
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding: 0;
+}
+.formbox:after,
+.formbox:before {
+    display: table;
+}
+.formbox-title {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ffffff;
+    border-color: #f5f5f5;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 4px 0px 0;
+    color: inherit;
+    margin-bottom: 0;
+    padding: 14px 15px 7px;
+    height: 48px;
+}
+.formbox-content {
+    background-color: #ffffff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0px;
+}
+.form-control {
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+

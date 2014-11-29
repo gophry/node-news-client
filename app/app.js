@@ -29,12 +29,29 @@
     });
     //'oute state for the brand module
     $stateProvider.state('brand',{
-      url:'/brand/',
-      templateUrl:'brand/brand.read.html',
-      controller:'BrandReadController as brandReadCtrl'
+      url:'/brand',
+      templateUrl:'brand/brand.html'
+    });
+    $stateProvider.state('brand.list',{
+      url:'/list',
+      parent:'brand',
+      templateUrl:'brand/brand.list.html',
+      controller: 'BrandListController as brandListCtrl'
+    });
+    $stateProvider.state('brand.create',{
+      url:'/create',
+      parent:'brand',
+      templateUrl:'brand/brand.create.html',
+      controller: 'BrandCreateController as brandCreateCtrl'
+    });
+    $stateProvider.state('brand.edit',{
+      url:'/edit',
+      parent:'brand',
+      templateUrl:'brand/brand.edit.html',
+      controller: 'BrandEditController as brandEditCtrl'
     });
 
-    //$urlRouterProvider.otherwise('/');
+    //$urlRouterProvider.otherwise('/');Brand Create and Edit forms loaded through respective states
   });
 
 

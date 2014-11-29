@@ -8,7 +8,7 @@
   });
 
   // Module BRAND Read Controller.
-  brand.controller('BrandReadController',['$http', function($http){
+  brand.controller('BrandListController',['$http', function($http){
     var settings = this;
     settings.brands = [  ];
     settings.ses = [ ];
