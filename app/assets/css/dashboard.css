@@ -166,6 +166,26 @@ border-right: 1px solid #e7eaec;
     padding: 14px 15px 7px;
     height: 48px;
 }
+.formbox-title h5 {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 7px;
+    padding: 0;
+    text-overflow: ellipsis;
+    float: left;
+}
+.formbox-tools {
+    display: inline-block;
+    float: right;
+    margin-top: 0;
+    position: relative;
+    padding: 0;
+}
+.formbox-tools a {
+    cursor: pointer;
+    margin-left: 5px;
+    color: #428bca;
+}
 .formbox-content {
     background-color: #ffffff;
     color: inherit;
@@ -175,6 +195,7 @@ border-right: 1px solid #e7eaec;
     border-style: solid solid none;
     border-width: 1px 0px;
 }
+
 .form-control {
     background-color: #FFFFFF;
     background-image: none;
@@ -186,4 +207,5 @@ border-right: 1px solid #e7eaec;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
     width: 100%;
 }
+
 

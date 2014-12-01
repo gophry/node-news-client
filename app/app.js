@@ -18,6 +18,21 @@
     });
   }]);
 
+  //application run for $state and $stateParams
+  app.run(
+      [          '$rootScope', '$state', '$stateParams',
+        function ($rootScope,   $state,   $stateParams) {
+
+          // It's very handy to add references to $state and $stateParams to the $rootScope
+          // so that you can access them from any scope within your applications.For example,
+          // <li ng-class="{ active: $state.includes('contacts.list') }"> will set the <li>
+          // to active whenever 'contacts.list' or one of its decendents is active.
+          $rootScope.$state = $state;
+          $rootScope.$stateParams = $stateParams;
+        }
+      ]
+  )
+
   //application routes and states definition
   app.config(function($stateProvider,$urlRouterProvider){
 
@@ -27,10 +42,11 @@
         abstract: true,
         controller: 'NavController'
     });
-    //'oute state for the brand module
+    //route state for the brand module
     $stateProvider.state('brand',{
       url:'/brand',
-      templateUrl:'brand/brand.html'
+      templateUrl:'brand/brand.html',
+      controller:'BrandController as brandCtrl'
     });
     $stateProvider.state('brand.list',{
       url:'/list',
@@ -50,7 +66,29 @@
       templateUrl:'brand/brand.edit.html',
       controller: 'BrandEditController as brandEditCtrl'
     });
-
+    // route state for campaign module
+    $stateProvider.state('campaign',{
+      url:'/campaign',
+      templateUrl:'campaign/campaign.html'
+    });
+    $stateProvider.state('campaign.list',{
+      url:'/list',
+      parent: 'campaign',
+      templateUrl:'campaign/campaign.list.html',
+      controller: 'CampaignListController as campaignListCtrl'
+    });
+    $stateProvider.state('campaign.create',{
+      url:'/create',
+      parent: 'campaign',
+      templateUrl:'campaign/campaign.create.html',
+      controller: 'CampaignCreateController as campaignCreateCtrl'
+    });
+    $stateProvider.state('campaign.edit',{
+      url:'/edit',
+      parent: 'campaign',
+      templateUrl:'campaign/campaign.edit.html',
+      controller: 'CampaignEditController as campaignEditCtrl'
+    });
     //$urlRouterProvider.otherwise('/');Brand Create and Edit forms loaded through respective states
   });
 

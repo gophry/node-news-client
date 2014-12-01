@@ -1,7 +1,18 @@
-
-  {"ses_region":"N. Virginia",
-  "max_send_in_24hrs":"500,000",
-  "max_send_rate":"70 per sec",
-  "sent_last_24hrs":"140,501",
-  "sends_left":"359,499"
+{
+    "ses_region":[
+    "Region",
+    "N. Virginia"
+  ],
+  "max_send_rate":[
+    "Send Rate",
+    "70 per sec"
+  ],
+  "sent_last_24hrs":[
+    "Sent in Last 24Hrs",
+    "140,501"
+  ],
+  "sends_left": [
+    "Sends Left",
+    "359,499"
+  ]
 }

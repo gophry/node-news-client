@@ -47,8 +47,8 @@
   <!-- Sidebar navigation starts-->
   <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
-      <li ng-repeat="item in navCtrl.navigation.nav">
-        <a href="#">{{item}}</a>
+      <li ng-repeat="(key,value) in navCtrl.navigation.nav">
+        <a ui-sref="{{value}}">{{key}}</a>
       </li>
     </ul>
   </div>

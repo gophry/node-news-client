@@ -1,10 +1,10 @@
 {
   "companyname": "HoneyWell",
   "loggeduser":"Yogesh",
-  "nav" : [
-    "Brands",  
-    "Campaign",
-    "Lists",
-    "Reports"
-  ]
+  "nav" : {
+    "Brands":"brand",
+    "Campaign":"campaign",
+    "Lists":"list",
+    "Reports":"reports"
+  }
 }

@@ -1,2 +1,17 @@
 <h3 class="row wrapper border-bottom">Brands</h3>
-        <div ui-view></div>
+
+<div ng-show="$state.current.name === 'brand'" ng-controller="BrandController as brandCtrl">
+        <div class="col-lg-3" ng-repeat="(key,value) in brandCtrl.ses">
+                <div class="formbox">
+                        <div class="formbox-title">
+                                <span class="label label-primary pull-right">Amazon SES</span>
+                                <h5>{{value[0]}}</h5>
+                        </div>
+                        <div class="formbox-content">
+                                <h3>{{value[1]}}</h3>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<div ui-view></div>
