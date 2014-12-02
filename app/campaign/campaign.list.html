@@ -1,0 +1,39 @@
+<div  ng-controller="BrandListController as brandListCtrl">
+<div class="col-md-8">
+    <h1 class="section-header">List of Brands</h1>
+    <p><button class="btn" onclick="window.location='http://sendy.co/demo/new-brand'"><i class="icon-plus-sign"></i> Add a new brand</button></p><br>
+
+    <table class="table table-striped responsive">
+      <thead>
+        <tr>
+          <th>Brands</th>
+          <th>Monthly limit</th>
+          <th>Used</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr ng-repeat="brand in brandListCtrl.brands" id="1">
+          <td><i class="glyphicon-calendar"></i> {{brand.mail.brandname}}</td>
+          <td><span style="font-size: 16px;color:#969696;">{{brand.monthlylimit}}</span></td>
+          <td><span style="font-size: 16px;color:#969696;">{{brand.limitused}}</span></td>
+          <td><a href="http://sendy.co/demo/edit-brand?i=1" title="" data-original-title=""><span class="icon icon-pencil"></span></a></td>
+          <td><a href="#" title="" id="delete-btn-1" data-original-title="Delete SUBERNOVA"><span class="icon icon-trash"></span></a></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  <!--amazon status template
+  <amazon-status class="col-md-4"></amazon-status> -->
+<ul class="list-group col-md-4">
+  <a href="#" class="list-group-item active">
+    Amazon SES Account
+  </a>
+  <li ng-repeat="(key,value) in brandListCtrl.ses" class="list-group-item">
+    <span class="badge">{{value}}</span>
+    {{key.charAt(0).toUpperCase() + key.substring(1)}}
+  </li>
+</ul>
+</div>

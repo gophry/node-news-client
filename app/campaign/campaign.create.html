@@ -1,0 +1,91 @@
+<div class="container-fluid" ng-controller="BrandCreateController as brandCreateCtrl">
+  <form name="createNewBrand" novalidate>
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="formbox">
+          <div class="formbox-title">
+            <h4>Create a New Brand</h4>
+          </div>
+          <div class="formbox-content">
+            <div class="form-group">
+              <label for="brandname">Brand Name:</label> <input id="brandname" name="brandname" placeholder="Brand Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="fromname">From Name:</label> <input id="fromname" name="fromname" placeholder="From Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="fromemail">From Email:</label> <input id="fromemail" name="fromemail" placeholder="From Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="replyemail">Reply Email:</label> <input id="replyemail" name="replyemail" placeholder="Reply Email" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="formbox">
+          <div class="formbox-title">
+            <h4>Brand Details</h4>
+          </div>
+          <div class="formbox-content">
+            <div class="row">
+              <div class="col-sm-6 vdivide">
+                <h5>Campaign Fee Settings</h5>
+                <div class="hdivide"></div>
+                <div class="form-group">
+                  <label for="currency">Currency:</label> <input id="currency" name="currency" placeholder="Currency" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="deliveryfee">Delivery Fee:</label>
+                  <div class="input-group m-b">
+                    <span class="input-group-addon">$</span>
+                    <input id="deliveryfee" name="deliveryfee" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="recipientcost">Cost per Recipient:</label>
+                  <div class="input-group m-b">
+                    <span class="input-group-addon">$</span>
+                    <input id="recipientcost" name="recipientcost" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h5>Set Monthly Limit</h5>
+                <div class="hdivide"></div>
+
+                <div class="form-group">
+                  <label for="choose-limit">Numbers of emails/month</label>
+                  <select name="choose-limit" id="choose-limit" class="form-control">
+                    <option value="unlimited" id="unlimited">No limits</option>
+                    <option value="custom" id="custom">Set limit</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="emailLimit">Email limit:</label>
+                  <input id="emailLimit" name="emailLimit" placeholder="e.g. 5000" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="resetDayMonth">Reset limit on which day of the month?</label>
+                  <input id="resetDayMonth" name="resetDayMonth" placeholder="Between 1-25" class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div classs="formbox formbox-content">
+          <div class="form-group">
+            <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Save</strong></button>
+            <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Reset</strong></button>
+            <button class="btn btn-sm btn-primary  m-t-n-xs" type="submit"><strong>Cancel</strong></button>
+            <label></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
